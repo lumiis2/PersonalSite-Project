@@ -1,0 +1,286 @@
+body {
+  color: #000;
+  background-color: #F4F1EE;
+  background-image: url('bbblurry3.svg'), url('bbblurry4.svg');
+  background-position: 100% 0%, 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin: 0px;
+  
+}
+
+h1 {
+    font-family: 'DM Serif Text', serif;
+    letter-spacing: 0.7rem;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-size: 6rem;
+    font-weight: normal;
+}
+#name{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    text-align: left;
+    height: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#description {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    margin: 0px;
+    padding: 0px
+}
+
+#skills{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+}
+
+.content li{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+h2 {
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.linkbox{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.linkbox  p {
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    text-align: left;
+    list-style-type: none;  
+}
+
+.projectbox {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+
+}
+
+/* 
+========================
+         CARD
+========================
+*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* 
+========================
+      COLLAPSING
+========================
+*/
+.collapsible {
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  font-weight: 600;
+}
+
+.collapsible:after {
+  content: '>';
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-right: 1rem;
+}
+
+.active:after {
+  content: ">";
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+
+.box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.quick-links-wrapper {
+  z-index: 3;
+  background-color: #c4c4c4;
+  border: 2px solid #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.q-link {
+ 
+  color: #000;
+  background-image: url('arrow-down.svg');
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-right: 2px solid #000;
+  padding-right: 70px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.q-link > p {
+  margin: 0;
+  padding: 0;
+}
+
+.q-link:hover {
+  color: #fff;
+  background-color: #000;
+  background-image: url('arrow-down1.svg');
+}
+
+.q-link.last {
+  border-right-style: none;
+}
+
+
+.site-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cc {
+  width: 75vw;
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.section {
+  border-bottom: 4px solid #000;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+
+
+.contactme {
+  display: flex;
+  gap: 2rem;
+  justify-content: left;
+  text-align: left; 
+}
+.contactme div {
+align-items: center;
+}
+.email {
+display: flex;
+
+}
+.email > p {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+  font-size: small;
+}
+
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 2rem;
+  background-color: #F4F1EE;
+  outline: 3px #F4F1EE solid;
+  outline-offset: -3px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+.Icon svg {
+  transition: 400ms;
+}
+
+.Icon:hover {
+  background-color: #000;
+}
+
+.Icon:hover svg {
+  fill: #F4F1EE;
+}
